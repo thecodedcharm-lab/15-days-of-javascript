@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Space Mono', monospace;
+    background-color: #eee5ff;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+
+    background-color: #fff9f0;
+
+    background-image:
+        linear-gradient(#e8d9f5 1px, transparent 1px),
+        linear-gradient(90deg, #e8d9f5 1px, transparent 1px);
+
+    background-size: 45px 45px;
+}
+
+.window {
+    width: 700px;
+    max-width: 90%;
+    background: #fffaf2;
+    border: 3px solid #35205e;
+    border-radius: 25px;
+    overflow: hidden;
+
+    box-shadow: 10px 12px 0 #c9a8ef;
+
+    z-index: 2;
+}
+
+.window-header {
+    height: 65px;
+    background: #d6baff;
+    border-bottom: 3px solid #35205e;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+
+.window-controls {
+    display: flex;
+    gap: 12px;
+}
+
+.control {
+    width: 17px;
+    height: 17px;
+    border: 2px solid #35205e;
+    border-radius: 50%;
+}
+
+.pink {
+    background: #ff9bbd;
+}
+
+.yellow {
+    background: #ffe27a;
+}
+
+.purple {
+    background: #bda5ff;
+}
+
+.window-title {
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #35205e;
+}
+
+.window-content {
+    padding: 65px 30px 35px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 30px;
+    line-height: 1.7;
+    color: #35205e;
+    margin-bottom: 30px;
+}
+
+.window-content p {
+    font-size: 14px;
+    color: #70578d;
+    margin-bottom: 40px;
+}
+
+button {
+    padding: 18px 40px;
+    background: #d7baff;
+    border: 3px solid #35205e;
+    border-radius: 12px;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    font-size: 15px;
+    color: #35205e;
+    cursor: pointer;
+    box-shadow: 0 6px 0 #8f70bd;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #ffb8d2;
+    transform: translateY(-3px);
+    box-shadow: 0 9px 0 #8f70bd;
+}
+
+button:active {
+    transform: translateY(3px);
+    box-shadow: 0 2px 0 #8f70bd;
+}
+
+.footer {
+    margin-top: 45px;
+    font-size: 10px;
+    letter-spacing: 2px;
+    color: #a58bbd;
+}
+
+.decoration {
+    position: absolute;
+    color: #9c72d7;
+    z-index: 1;
+}
+
+.star {
+    font-size: 65px;
+}
+
+.star-one {
+    top: 12%;
+    left: 15%;
+}
+
+.star-two {
+    bottom: 12%;
+    right: 15%;
+}
+
+.star-three {
+    top: 20%;
+    right: 20%;
+}
+
+.sticker {
+    position: absolute;
+    padding: 15px 20px;
+    background: #ffe5ef;
+    border: 2px solid #35205e;
+    color: #35205e;
+    font-weight: bold;
+    box-shadow: 4px 5px 0 #c9a8ef;
+    transform: rotate(-8deg);
+    z-index: 5;
+}
+
+.sticker-one {
+    top: 15%;
+    right: 10%;
+}
+
+.sticker-two {
+    bottom: 17%;
+    left: 12%;
+    font-size: 35px;
+}
+
+.cat {
+    bottom: 12%;
+    left: 25%;
+    font-size: 65px;
+}
+
+.sparkle {
+    top: 65%;
+    right: 25%;
+    font-size: 50px;
+}
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 19px;
+    }
+
+    .window-content {
+        padding: 45px 15px 25px;
+    }
+
+    .window-content p {
+        font-size: 12px;
+    }
+
+    button {
+        padding: 15px 25px;
+        font-size: 12px;
+    }
+
+    .sticker {
+        display: none;
+    }
+
+}
