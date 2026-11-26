@@ -49,7 +49,7 @@ Every project is an opportunity to:
 
 ## 📈 Progress
 
-**Day 01 / 15 completed**
+**Day 02 / 15 completed**
 
 15 days. 15 projects. A lot of learning ahead!
 
