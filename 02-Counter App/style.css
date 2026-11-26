@@ -1,0 +1,305 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #fff3e7;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #75432f;
+    padding: 35px 20px;
+}
+
+.container {
+    max-width: 850px;
+    margin: auto;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fffaf3;
+    padding: 18px 25px;
+    border: 2px solid #f3d5bd;
+    border-radius: 60px;
+    box-shadow: 0 8px 20px #75432f18;
+    margin-bottom: 65px;
+}
+
+.navbar h1 {
+    font-size: 30px;
+}
+
+.cookie {
+    font-size: 38px;
+}
+
+.reset {
+    border: none;
+    background: #fce5d2;
+    color: #75432f;
+    font-size: 27px;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.counter-card {
+    background: #fffaf3;
+    border: 3px solid #f5dfcd;
+    border-radius: 65px;
+    padding: 45px 25px;
+    text-align: center;
+    box-shadow: 0 15px 35px #75432f20;
+    margin-bottom: 65px;
+}
+
+.label {
+    display: inline-block;
+    background: #fbe0cc;
+    padding: 15px 45px;
+    border-radius: 40px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.count {
+    font-size: 170px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    gap: 35px;
+}
+
+.action {
+    width: 300px;
+    min-height: 180px;
+    border-radius: 55px;
+    border: 3px solid #e9c2a5;
+    background: #fff8ef;
+    color: #75432f;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 10px 20px #75432f20;
+    transition: 0.3s ease;
+}
+
+.action span {
+    display: block;
+    font-size: 65px;
+    margin-bottom: 10px;
+}
+
+.decrease {
+    background: #a66e50;
+    color: #fff3e7;
+    border-color: #8e563d;
+}
+
+.action:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 25px #75432f30;
+}
+
+.reload-area {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+}
+
+.reload {
+    padding: 20px 55px;
+    border-radius: 50px;
+    border: 3px solid #e9c2a5;
+    background: #fffaf3;
+    color: #75432f;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 8px 20px #75432f20;
+    transition: 0.3s;
+}
+
+.reload:hover {
+    transform: scale(1.05);
+}
+
+
+
+@media (min-width: 900px) {
+
+    body {
+        padding: 20px;
+    }
+
+    .container {
+        height: calc(100vh - 40px);
+        display: grid;
+        grid-template-rows: auto minmax(0, 1fr) auto auto;
+        gap: 18px;
+    }
+
+    .navbar {
+        margin-bottom: 0;
+        padding: 12px 25px;
+    }
+
+    .counter-card {
+        margin-bottom: 0;
+        padding: 15px 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: 0;
+    }
+
+    .count {
+        font-size: clamp(90px, 16vh, 150px);
+        margin: 5px 0;
+    }
+
+    .buttons {
+        gap: 30px;
+    }
+
+    .action {
+        min-height: clamp(100px, 16vh, 145px);
+    }
+
+    .reload-area {
+        margin-top: 0;
+    }
+
+    .reload {
+        padding: 12px 45px;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 20px 15px;
+    }
+
+    .navbar {
+        margin-bottom: 45px;
+        padding: 12px 18px;
+    }
+
+    .navbar h1 {
+        font-size: 22px;
+    }
+
+    .cookie {
+        font-size: 28px;
+    }
+
+    .reset {
+        width: 48px;
+        height: 48px;
+        font-size: 22px;
+    }
+
+    .counter-card {
+        padding: 35px 15px;
+        border-radius: 40px;
+        margin-bottom: 40px;
+    }
+
+    .label {
+        font-size: 18px;
+        padding: 12px 25px;
+    }
+
+    .count {
+        font-size: 115px;
+    }
+
+    .buttons {
+        gap: 15px;
+    }
+
+    .action {
+        min-height: 145px;
+        font-size: 19px;
+        border-radius: 35px;
+    }
+
+    .action span {
+        font-size: 45px;
+    }
+
+    .reload-area {
+        margin-top: 35px;
+    }
+
+    .reload {
+        padding: 16px 35px;
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 360px) {
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .action {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 900px) and (max-height: 650px) {
+
+    .navbar {
+        padding: 5px 20px;
+    }
+
+    .reset {
+        width: 48px;
+        height: 48px;
+    }
+
+    .counter-card {
+        padding: 5px 20px;
+    }
+
+    .label {
+        font-size: 18px;
+        padding: 8px 30px;
+    }
+
+    .count {
+        font-size: 85px;
+    }
+
+    .action {
+        min-height: 85px;
+        font-size: 22px;
+    }
+
+    .action span {
+        font-size: 40px;
+        margin-bottom: 2px;
+    }
+
+    .reload {
+        padding: 8px 35px;
+        font-size: 20px;
+    }
+}
