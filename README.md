@@ -18,7 +18,7 @@ Instead of just learning concepts, I'm turning them into working projects, one d
 | Day | Project | Status |
 |---|---|---|
 | 01 | Color Changer | ✅ Completed |
-| 02 | Coming Soon | ⏳ |
+| 02 | Counter App | ✅ Completed |
 | 03 | Coming Soon | ⏳ |
 | 04 | Coming Soon | ⏳ |
 | 05 | Coming Soon | ⏳ |
