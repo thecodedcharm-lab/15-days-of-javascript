@@ -19,7 +19,7 @@ Instead of just learning concepts, I'm turning them into working projects, one d
 |---|---|---|
 | 01 | Color Changer | ✅ Completed |
 | 02 | Counter App | ✅ Completed |
-| 03 | Coming Soon | ⏳ |
+| 03 | Digital Clock | ✅ Completed |
 | 04 | Coming Soon | ⏳ |
 | 05 | Coming Soon | ⏳ |
 | 06 | Coming Soon | ⏳ |
@@ -49,7 +49,7 @@ Every project is an opportunity to:
 
 ## 📈 Progress
 
-**Day 02 / 15 completed**
+**Day 03 / 15 completed**
 
 15 days. 15 projects. A lot of learning ahead!
 
