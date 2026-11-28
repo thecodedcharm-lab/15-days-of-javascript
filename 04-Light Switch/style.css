@@ -1,0 +1,185 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    min-height: 100svh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at center, #29251f, #111111 75%);
+    background-image: url("bg.jpg");
+    font-family: 'Outfit', sans-serif;
+    padding: 20px;
+}
+
+
+
+.room {
+    width: min(88vw, 420px, calc((100svh - 40px) * 0.56));
+    aspect-ratio: 0.56;
+    height: 85vh;
+    position: relative;
+    overflow: hidden;
+    background: #fffde7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: background 0.5s ease;
+    box-shadow: 0 15px 60px rgba(0, 0, 0, 0.3);
+    border-radius: 25px;
+}
+
+
+
+.wire {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 15%;
+    background: #333;
+}
+
+
+
+.lamp {
+    position: absolute;
+    top: 15%;
+    width: 29%;
+    height: 11%;
+    display: flex;
+    justify-content: center;
+    z-index: 3;
+}
+
+.lamp-shade {
+    width: 100%;
+    height: 82%;
+    background: #f4b46e;
+    border: 2px solid #222;
+    border-radius: 50% 50% 5px 5px;
+}
+
+
+
+.light-beam {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 82%;
+    height: 42%;
+    background: rgba(255, 244, 130, 0.45);
+    clip-path: polygon(50% 0, 0 100%, 100% 100%);
+    filter: blur(12px);
+    z-index: 1;
+    transition: opacity 0.5s ease;
+}
+
+
+.message {
+    position: absolute;
+    top: 49%;
+    width: 100%;
+    text-align: center;
+    z-index: 2;
+}
+
+.message h2 {
+    font-size: clamp(13px, 4vw, 19px);
+    color: #a56b35;
+    font-weight: 500;
+}
+
+.message p {
+    margin-top: 12px;
+    font-size: clamp(10px, 2.8vw, 13px);
+    color: #b0804d;
+}
+
+
+.switch {
+    position: absolute;
+    top: 70%;
+    width: 10%;
+    height: 13%;
+    background: #555;
+    border: 3px solid #777;
+    border-radius: 3px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding-top: 8px;
+    z-index: 4;
+}
+
+.switch-dot {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+.footer {
+    position: absolute;
+    bottom: 7%;
+    font-size: clamp(9px, 2.5vw, 12px);
+    color: #b0804d;
+}
+
+
+
+.room.dark {
+    background: #454545;
+}
+
+.dark .wire {
+    background: #222;
+}
+
+.dark .lamp-shade {
+    background: #c68b51;
+}
+
+.dark .light-beam {
+    opacity: 0;
+}
+
+.dark .message h2,
+.dark .message p,
+.dark .footer {
+    color: #e0ae73;
+}
+
+.dark .switch {
+    background: #292929;
+    border-color: #666;
+}
+
+.dark .switch-dot {
+    background: #777;
+}
+
+
+
+@media (max-width: 480px) {
+    body {
+        padding: 12px;
+    }
+
+    .room {
+        width: min(92vw, calc((100svh - 24px) * 0.56));
+    }
+
+    .switch {
+        border-width: 2px;
+    }
+}
