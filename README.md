@@ -20,7 +20,7 @@ Instead of just learning concepts, I'm turning them into working projects, one d
 | 01 | Color Changer | ✅ Completed |
 | 02 | Counter App | ✅ Completed |
 | 03 | Digital Clock | ✅ Completed |
-| 04 | Coming Soon | ⏳ |
+| 04 | Light Switch | ✅ Completed |
 | 05 | Coming Soon | ⏳ |
 | 06 | Coming Soon | ⏳ |
 | 07 | Coming Soon | ⏳ |
